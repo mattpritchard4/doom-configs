@@ -28,8 +28,8 @@
       "M-o" #'ace-window
       "C-c s" #'lsp-ui-sideline-toggle-symbols-info
       "C-c C-r" #'lsp-rename
-      "C-c L" #'lsp-ui-flycheck-list)
-
+      "C-c L" #'lsp-ui-flycheck-list
+      "<f8>" #'treemacs)
 ;; Tooltips
 
 (setq company-tooltip-align-annotations t)
