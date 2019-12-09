@@ -12,6 +12,7 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
+(subword-mode 1)
 
 ;; Custom keybindings
 
@@ -29,4 +30,14 @@
       "C-c C-r" #'lsp-rename
       "C-c L" #'lsp-ui-flycheck-list)
 
+;; Tooltips
+
 (setq company-tooltip-align-annotations t)
+
+;; Prettier
+
+(add-hook! 'js2-mode-hook #'prettier-js)
+(add-hook! 'js-mode-hook #'prettier-js)
+(add-hook! 'rjsx-mode-hook #'prettier-js)
+(add-hook! 'web-mode-hook #'prettier-js)
+(add-hook! 'typescript-mode-hook #'prettier-js)
