@@ -36,8 +36,8 @@
 
 ;; Prettier
 
-(add-hook! 'js2-mode-hook #'prettier-js)
-(add-hook! 'js-mode-hook #'prettier-js)
-(add-hook! 'rjsx-mode-hook #'prettier-js)
-(add-hook! 'web-mode-hook #'prettier-js)
-(add-hook! 'typescript-mode-hook #'prettier-js)
+(add-hook! 'js2-mode-hook
+           'js-mode-hook
+           'rjsx-mode-hook
+           'web-mode-hook
+           'typescript-mode-hook #'prettier-js)
