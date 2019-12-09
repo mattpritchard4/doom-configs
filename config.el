@@ -41,3 +41,8 @@
            'rjsx-mode-hook
            'web-mode-hook
            'typescript-mode-hook #'prettier-js)
+
+;; Font
+
+(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 15)
+      doom-unicode-font (font-spec :family "Input Mono Narrow" :size 15))
