@@ -29,7 +29,8 @@
       "C-c s" #'lsp-ui-sideline-toggle-symbols-info
       "C-c C-r" #'lsp-rename
       "C-c L" #'lsp-ui-flycheck-list
-      "<f8>" #'treemacs)
+      "<f8>" #'treemacs
+      "C-j" #'emmet-expand-line)
 ;; Tooltips
 
 (setq company-tooltip-align-annotations t)
@@ -40,7 +41,7 @@
            'js-mode-hook
            'rjsx-mode-hook
            'web-mode-hook
-           'typescript-mode-hook #'prettier-js)
+           'typescript-mode-hook #'prettier-js-mode)
 
 ;; Font
 
