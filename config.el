@@ -12,7 +12,7 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
-(subword-mode 1)
+(global-subword-mode 1)
 
 ;; Custom keybindings
 
