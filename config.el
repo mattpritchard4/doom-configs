@@ -31,6 +31,8 @@
       "C-c L" #'lsp-ui-flycheck-list
       "<f8>" #'treemacs
       "C-j" #'emmet-expand-line)
+
+
 ;; Tooltips
 
 (setq company-tooltip-align-annotations t)
@@ -47,3 +49,8 @@
 
 (setq doom-font (font-spec :family "DejaVu Sans Mono" :size 15)
       doom-unicode-font (font-spec :family "Input Mono Narrow" :size 15))
+
+;; Disable irritating ts-mode smartparens behavior
+(add-hook! 'typescript-mode-hook (local-unset-key "\'"))
+(add-hook! 'typescript-mode-hook (local-unset-key "\""))
+(add-hook! 'typescript-mode-hook (local-unset-key "("))
