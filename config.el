@@ -30,7 +30,12 @@
       "C-c C-r" #'lsp-rename
       "C-c L" #'lsp-ui-flycheck-list
       "<f8>" #'treemacs
-      "C-j" #'emmet-expand-line)
+      "C-j" #'emmet-expand-line
+      "C-S-f" #'sp-next-sexp
+      "C-S-b" #'sp-previous-sexp
+      "C-S-d" #'sp-down-sexp
+      "C-S-u" #'sp-up-sexp
+      "C-S-U" #'sp-unwrap-sexp)
 
 
 ;; Tooltips
