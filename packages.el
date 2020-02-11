@@ -8,3 +8,4 @@
 
 (package! prettier-js)
 (package! reason-mode)
+(package! ng2-mode)
