@@ -63,3 +63,14 @@
 ;; Company completion
 
 (setq company-idle-delay 0)
+
+;; angular lsp
+
+(setq lsp-clients-angular-language-server-command
+  '("node"
+    "/Users/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules/@angular/language-server"
+    "--ngProbeLocations"
+    "/Users/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules"
+    "--tsProbeLocations"
+    "/Users/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules"
+    "--stdio"))
