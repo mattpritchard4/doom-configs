@@ -26,6 +26,7 @@
       "C->" #'mc/mark-next-like-this
       "C-c C-<" #'mc/mark-all-like-this
       "M-o" #'ace-window
+      "M-s M-s" #'ace-swap-window
       "C-c s" #'lsp-ui-sideline-toggle-symbols-info
       "C-c C-r" #'lsp-rename
       "C-c L" #'lsp-ui-flycheck-list
