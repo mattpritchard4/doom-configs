@@ -33,7 +33,8 @@
       "<f8>" #'treemacs
       "C-j" #'emmet-expand-line
       "C-S-R" #'sp-rewrap-sexp
-      "C-S-U" #'sp-unwrap-sexp)
+      "C-S-U" #'sp-unwrap-sexp
+      "C-<tab>" #'+fold/toggle)
 
 
 ;; Tooltips
