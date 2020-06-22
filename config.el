@@ -51,8 +51,8 @@
 
 ;; Font
 
-(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 15)
-      doom-unicode-font (font-spec :family "Input Mono Narrow" :size 15))
+(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 24)
+      doom-unicode-font (font-spec :family "Input Mono Narrow" :size 24))
 
 ;; Disable irritating ts-mode smartparens behavior
 (add-hook! 'typescript-mode-hook (local-unset-key "\'"))
@@ -65,11 +65,22 @@
 
 ;; angular lsp
 
+;; linux
 (setq lsp-clients-angular-language-server-command
   '("node"
-    "/Users/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules/@angular/language-server"
+    "/home/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules/@angular/language-server"
     "--ngProbeLocations"
-    "/Users/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules"
+    "/home/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules"
     "--tsProbeLocations"
-    "/Users/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules"
+    "/home/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules"
     "--stdio"))
+
+;; mac
+;; (setq lsp-clients-angular-language-server-command
+;;   '("node"
+;;     "/Users/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules/@angular/language-server"
+;;     "--ngProbeLocations"
+;;     "/Users/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules"
+;;     "--tsProbeLocations"
+;;     "/Users/mattpritchard/.nvm/versions/node/v10.16.2/lib/node_modules"
+;;     "--stdio"))
