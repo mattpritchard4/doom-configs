@@ -42,6 +42,7 @@
 (setq company-tooltip-align-annotations t)
 
 ;; Prettier
+(setq +format-with-lsp nil)
 
 (add-hook! 'js2-mode-hook
            'js-mode-hook
@@ -90,3 +91,7 @@
 (add-to-list 'projectile-globally-ignored-directories "*/node_modules/")
 (which-key-mode -1)
 (setq projectile-indexing-method 'native)
+
+;; org
+
+(add-hook! 'org-mode-hook #'org-bullets-mode)

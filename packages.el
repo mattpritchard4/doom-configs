@@ -10,3 +10,4 @@
 (package! reason-mode)
 (package! restclient)
 (package! indium)
+(package! org-bullets)
