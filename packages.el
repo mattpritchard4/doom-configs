@@ -11,3 +11,4 @@
 (package! restclient)
 (package! indium)
 (package! org-bullets)
+(package! lorem-ipsum)

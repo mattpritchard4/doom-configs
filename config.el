@@ -42,6 +42,7 @@
 (setq company-tooltip-align-annotations t)
 
 ;; Prettier
+;; Force prettier as formatter vs using lsp by default
 (setq +format-with-lsp nil)
 
 (add-hook! 'js2-mode-hook
@@ -59,6 +60,19 @@
 (add-hook! 'typescript-mode-hook (local-unset-key "\'"))
 (add-hook! 'typescript-mode-hook (local-unset-key "\""))
 (add-hook! 'typescript-mode-hook (local-unset-key "("))
+
+(defun typescript-mode-setup ()
+  "Custom setup for Typescript mode"
+  (setq flycheck-checker 'typescript-tslint)
+  )
+(add-hook 'typescript-mode-hook 'typescript-mode-setup)
+
+;; (add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
+;; (after! flycheck
+;;   (flycheck-add-mode 'typescript-eslint 'typescript-mode)
+;;   (flycheck-add-mode 'css-stylelint 'typescript-mode)
+;;   (add-hook 'typescript-mode-hook (lambda () (flycheck-add-next-checker 'lsp-ui 'typescript-eslint)))
+;;   (add-hook 'typescript-mode-hook (lambda () (flycheck-add-next-checker 'typescript-eslint 'css-stylelint))))
 
 ;; Company completion
 
